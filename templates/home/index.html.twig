@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+   
+{% block main %}
+<main id="mainIndex">
+    <p>Aujourd'hui on est le {{ "now"|date("d/m/Y") }}</p>
+    <h2>Témoignages</h2>
+    <p>Découvrez ce que les gens disent de notre plateforme</p>
+    <section>
+        <article>
+            <div><img src="{{ asset("images/parent-1.jpeg") }}" alt="image de profil parent 1"></div>
+            <p>"Ma fille a beacoup appris grâce à cette plateforme. Les cours sont très informatifs et faciles à comprendre."</p>
+            <h3>- Thérèse Dupont</h3>
+        </article>
+        <article>
+            <div><img src="{{ asset("images/parent-2.jpeg") }}" alt="image de profil parent 2"></div>
+            <p>"Une excellente ressource pour l'apprentissage en ligne. Je la recommande à tout le monde!"</p>
+            <h3>- Jean Curie</h3>
+        </article>
+        <article>
+            <div><img src="{{ asset("images/parent-3.jpeg") }}" alt="image de profil parent 3"></div>
+            <p>Les ressources disponibles sont très utiles et variées. Une plateforme indispensable pour l'éducation."</p>
+            <h3>- Albert Dorne</h3>
+    </article>
+    </section>
+</main>
+{% endblock %}
+
+

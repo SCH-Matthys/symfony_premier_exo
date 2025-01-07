@@ -1,0 +1,25 @@
+@use "./../abstract/variable" as var;
+
+footer{
+    background-color: var.$primary-color;
+    a{
+        margin-left: 50%;
+        transform: translateX(-50%);
+        img{
+            height: 150px;
+            transform: translateX(-50%);
+            padding-top: 32px;
+            padding-bottom: 32px;
+        }
+    }
+    p{
+        text-align: center;
+        font-size: 20px;
+        padding-bottom: 32px;
+        color: var.$text-white-color;
+    }
+    p:nth-of-type(5){
+        border-top: solid 1px var.$underline-footer-color;
+        padding-top: 32px;
+    }
+}

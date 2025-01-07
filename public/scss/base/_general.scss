@@ -1,0 +1,10 @@
+
+@use "../abstract/variable" as var;
+
+body{
+    background-color: var.$background-color;
+    font-family: Nunito;
+}
+h1,h2,h3{
+    font-family: Muli;
+}
