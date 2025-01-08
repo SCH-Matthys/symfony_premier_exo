@@ -1,7 +1,46 @@
 @use "./../abstract/variable" as var;
 
+// PAGE INDEX /////////////////////////////////////////////////////////////
+
 #mainIndex{
     background-color: var.$background-color;
+    
+    div{
+        background-image: url(./../../images/banner.jpeg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 70vh;
+        position: relative;
+        h1{
+            text-align: center;
+            font-size: 100px;
+            color: var.$text-black-color;
+            padding-top: 12vh;
+            width: 80%;
+            margin-left: 50%;
+            transform: translateX(-50%);
+            text-shadow: 4px 4px 2px white;
+        }
+        a{
+            position: absolute;
+            background-color: var.$danger-color;
+            padding: 24px 32px;
+            border-radius: 6px;
+            bottom: 0px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: var.$text-white-color;
+            font-size: 22px;
+            letter-spacing: 1px;
+            border: solid 2px var.$danger-color;
+            transition: 0.2s;
+            &:hover{
+                color: var.$danger-color;
+                background-color: var.$text-white-color;
+            }
+        }
+    }
     p{
         text-align: center;
     }
@@ -58,6 +97,188 @@
             }
             p:nth-of-type(2){
                 text-align: end;
+            }
+        }
+    }
+}
+
+// PAGE COURS /////////////////////////////////////////////////////////////
+
+#mainCours{
+    h2{
+        text-align: center;
+        padding-top: 64px;
+        color: var.$text-black-color;
+        font-size: 46px;
+    }
+    p:nth-of-type(1){
+        text-align: center;
+        font-size: 24px;
+        padding-top: 16px;
+    }
+    section{
+        padding-top: 64px;
+        margin-bottom: 64px;
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+        article{
+            padding: 16px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0px -4px 6px 4px rgb(226, 226, 226);
+            width: 25vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 128px;
+            position: relative;
+            img{
+                width: 100%;
+                height: 450px;
+                border-bottom: solid 2px var.$primary-color;
+            }
+            h3{
+                padding: 64px 0px 32px;
+                font-size: 22px;
+                font-weight: bold;
+            }
+            p{
+                font-size: 20px;
+                text-align: center;
+                width: 85%;
+                padding-bottom: 32px;
+            }
+            a{
+                position: absolute;
+                text-align: center;
+                background-color: var.$danger-color;
+                padding: 24px 32px;
+                border-radius: 6px;
+                bottom: 16px;
+                left: 50%;
+                transform: translateX(-50%);
+                color: var.$text-white-color;
+                font-size: 22px;
+                letter-spacing: 1px;
+                border: solid 2px var.$danger-color;
+                transition: 0.2s;
+                &:hover{
+                    color: var.$danger-color;
+                    background-color: var.$text-white-color;
+                }
+            }
+        }
+    }
+}
+
+// PAGE RESSOURCES /////////////////////////////////////////////////////////////
+
+#mainRessources{
+    h2{
+        text-align: center;
+        padding-top: 64px;
+        color: var.$text-black-color;
+        font-size: 46px;
+    }
+    p:nth-of-type(1){
+        text-align: center;
+        font-size: 24px;
+        padding-top: 16px;
+    }
+    table{
+        border-bottom: solid 2px var.$primary-color;
+        font-size: 22px;
+        margin: 64px auto;
+        thead{
+            color: var.$text-white-color;
+            background-color: var.$primary-color;
+            font-weight: bold;
+            tr{
+                td{
+                    padding: 16px 32px;
+                    letter-spacing: 1px;
+                } 
+            }
+        }
+        tbody{
+            tr{
+                td{
+                    padding: 16px 32px;
+                }
+            }
+            tr:nth-of-type(2){
+                background-color: white;
+                border-top: solid 2px grey;
+                border-bottom: solid 2px grey;
+            }
+        }
+    }
+}
+
+// PAGE CONTACT /////////////////////////////////////////////////////////////
+
+#mainContact{
+    h2{
+        text-align: center;
+        padding-top: 64px;
+        color: var.$text-black-color;
+        font-size: 46px;
+    }
+    p:nth-of-type(1){
+        text-align: center;
+        font-size: 24px;
+        padding-top: 16px;
+    }
+    form{
+        padding: 32px;
+        box-shadow: 0px 0px 8px 4px rgb(213, 213, 213);
+        margin: 64px auto;
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        background-color: white;
+        position: relative;
+        padding-bottom: 128px;
+        input{
+            padding: 8px;
+            border-radius: 4px;
+            border: solid 1px grey;
+            font-size: 18px;
+        }
+        label{
+            font-size: 20px;
+            font-weight: bold;
+            padding: 16px 0px 8px;
+        }
+        select{
+            padding: 8px;
+            border-radius: 4px;
+            border: solid 1px grey;
+            font-size: 18px;
+        }
+        textarea{
+            border-radius: 4px;
+            padding: 32px 8px;
+        }
+        button{
+            position: absolute;
+            background-color: var.$danger-color;
+            padding: 16px 24px;
+            border-radius: 6px;
+            bottom: 16px;
+            left: 24%;
+            transform: translateX(-50%);
+            color: var.$text-white-color;
+            font-size: 22px;
+            letter-spacing: 1px;
+            border: solid 2px var.$danger-color;
+            transition: 0.2s;
+            &:hover{
+                color: var.$danger-color;
+                cursor: pointer;
+                background-color: var.$text-white-color;
             }
         }
     }

@@ -2,5 +2,24 @@
 
 {% block title %}Contact{% endblock %}
 
-{% block body %}
+{% block main %}
+    <main id="mainContact">
+        <h2>Contactez-Nous</h2>
+        <p>Avez-vous des questions ou des suggestions? N'hésitez pas à nous contacter!</p>
+        <form action="">
+            <label for="inputName">Nom:</label>
+            <input type="text" name="inputName" id="inputName">
+            <label for="inputEmail">Email:</label>
+            <input type="email" name="inputEmail" id="inputEmail">
+            <label for="inputSelect">Choisissez un Sujet:</label>
+            <select name="inputSelect" id="inputSelect">
+                <option value="">Sélectionnez un sujet</option>
+            </select>
+            <label for="inputSubject">Sujet:</label>
+            <input type="text" name="inputSubject" id="inputSubject">
+            <label for="inputTextarea">Message:</label>
+            <textarea name="inputTextarea" id="inputTextarea"></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </main>
 {% endblock %}

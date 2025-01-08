@@ -2,5 +2,29 @@
 
 {% block title %}Cours{% endblock %}
 
-{% block body %}
+{% block main %}
+    <main id="mainCours">
+        <h2>Nos cours</h2>
+        <p>Apprenez à votre rythme avec nos cours en ligne</p>
+        <section>
+            <article>
+                <img src="{{ asset("images/maths.jpeg") }}" alt="">
+                <h3>Mathématiques</h3>
+                <p>Explorez les concepts fondamentaix et avancés des mathématiques et devenez un maître des nombres.</p>
+                <a href="">Démarrer l'Apprentissage</a>
+            </article>
+            <article>
+                <img src="{{ asset("images/science.jpeg") }}" alt="">
+                <h3>Sciences</h3>
+                <p>Découvrez les mystères de l'univers, de la biologie moléculaire à la physique quantique.</p>
+                <a href="">Démarrer l'Apprentissage</a>
+            </article>
+            <article>
+                <img src="{{ asset("images/literature.jpeg") }}" alt="">
+                <h3>Littérature</h3>
+                <p>Parcourez les oeuvres des plus grands auteurs, poètes, et dramaturges de l'histoire.</p>
+                <a href="">Démarrer l'Apprentissage</a>
+            </article>
+        </section>
+    </main>
 {% endblock %}

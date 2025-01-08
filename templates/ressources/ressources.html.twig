@@ -2,5 +2,35 @@
 
 {% block title %}Ressources{% endblock %}
 
-{% block body %}
+{% block main %}
+    <main id="mainRessources">
+        <h2>Ressources</h2>
+        <p>Documents, vidéos, et autres ressources pour approfondier vos connaissances</p>
+        <table>
+            <thead>
+                <tr>
+                    <td>Type</td>
+                    <td>Titre</td>
+                    <td>Description</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>PDF</td>
+                    <td>Introduction à la biologie</td>
+                    <td>Ce document fournit des informations de base sur la cellule, l'ADN, et d'autres sujets de biologie.</td>
+                </tr>
+                <tr>
+                    <td>Vidéo</td>
+                    <td>Les fondements de la Physique</td>
+                    <td>Une série de vidéos qui explique les concepts fondamentaux de la physiques.</td>
+                </tr>
+                <tr>
+                    <td>Podcast</td>
+                    <td>Les chefs-d'oeuvre de la Littérature</td>
+                    <td>Découverz kes analyses des plus grand chefs d'oeuvre de la littérature mondiale.</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
 {% endblock %}

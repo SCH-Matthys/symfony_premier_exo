@@ -12,16 +12,12 @@
                 <nav>
                     <a href=""><img src="{{ asset("images/Logo.png")}}" alt="Logo"></a>
                     <ul>
-                        <li><a href="{{ path("app_home") }}">Accueil</a></li>
-                        <li><a href="{{ path("app_cours") }}">Cours</a></li>
-                        <li><a href="{{ path("app_ressources") }}">Ressources</a></li>
-                        <li><a href="{{ path("app_contact") }}">Contact</a></li>
+                        <li><a class="{% if app.request.attributes.get('_route') == 'app_home' %}active{% endif %}" href="{{ path("app_home") }}">Accueil</a></li>
+                        <li><a class="{% if app.request.attributes.get('_route') == 'app_cours' %}active{% endif %}" href="{{ path("app_cours") }}">Cours</a></li>
+                        <li><a class="{% if app.request.attributes.get('_route') == 'app_ressources' %}active{% endif %}" href="{{ path("app_ressources") }}">Ressources</a></li>
+                        <li><a class="{% if app.request.attributes.get('_route') == 'app_contact' %}active{% endif %}" href="{{ path("app_contact") }}">Contact</a></li>
                     </ul>
                 </nav>
-                <div>
-                    <h1>Bienvenue sur Kids Learning</h1>
-                    <a href="">Découvrir</a>
-                </div>
             </header>
         {% endblock %}
 

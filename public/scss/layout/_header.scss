@@ -32,40 +32,7 @@ header{
             }
         }
     }
-    div{
-        background-image: url(./../../images/banner.jpeg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 70vh;
-        position: relative;
-        h1{
-            text-align: center;
-            font-size: 100px;
-            color: var.$text-black-color;
-            padding-top: 12vh;
-            width: 80%;
-            margin-left: 50%;
-            transform: translateX(-50%);
-            text-shadow: 4px 4px 2px white;
-        }
-        a{
-            position: absolute;
-            background-color: var.$danger-color;
-            padding: 24px 32px;
-            border-radius: 6px;
-            bottom: 0px;
-            left: 50%;
-            transform: translateX(-50%);
-            color: var.$text-white-color;
-            font-size: 22px;
-            letter-spacing: 1px;
-            border: solid 2px var.$danger-color;
-            transition: 0.2s;
-            &:hover{
-                color: var.$danger-color;
-                background-color: var.$text-white-color;
-            }
-        }
+    .active{
+        color: var.$danger-color;
     }
 }
